@@ -1,0 +1,10 @@
+{
+  "name": "Luz do Alcorão",
+  "short_name": "Luz do Alcorão",
+  "description": "Estudo do Alcorão, espiritualidade islâmica e busca de sentido.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071d1a",
+  "theme_color": "#071d1a",
+  "lang": "pt-BR"
+}

@@ -208,6 +208,7 @@
 @layer pages {
   .hero {
     position: relative; overflow: hidden; isolation: isolate; min-height: calc(100svh - 5rem); display: grid; align-items: center;
+    color: var(--ivory-100);
     background:
       radial-gradient(circle at 72% 48%, rgba(202,168,94,.13), transparent 24rem),
       linear-gradient(132deg, var(--emerald-950), var(--emerald-900) 58%, var(--petrol-900));
@@ -270,6 +271,7 @@
 
   .page-hero, .topic-hero, .names-hero, .devotional-hero, .surah-hero {
     position: relative; overflow: hidden; padding: clamp(5rem, 10vw, 8rem) 0;
+    color: var(--ivory-100);
     background:
       radial-gradient(circle at 70% 10%, rgba(202,168,94,.13), transparent 28rem),
       linear-gradient(135deg, var(--emerald-950), var(--emerald-900) 64%, var(--petrol-900));

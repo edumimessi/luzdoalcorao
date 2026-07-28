@@ -1,86 +1,166 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Luz do Alcorão: estudos do Alcorão, tradição islâmica e busca de sentido em diálogo respeitoso com a Logoterapia.">
-  <meta name="theme-color" content="#071d1a">
-  <title>Luz do Alcorão — espiritualidade e sentido</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Luz do Alcorão — biblioteca islâmica em português para leitura, estudo e devoção, fundamentada no Alcorão, na Sunnah autêntica e no Tafsir clássico.">
+  <meta name="theme-color" content="#073c35">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Luz do Alcorão">
+  <meta property="og:title" content="Luz do Alcorão">
+  <meta property="og:description" content="Uma biblioteca islâmica moderna, reverente e acessível em língua portuguesa.">
+  <meta property="og:url" content="https://luzdoalcorao.com.br/">
+  <meta property="og:image" content="https://luzdoalcorao.com.br/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://luzdoalcorao.com.br/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Luz do Alcorão — Biblioteca islâmica em português</title>
 </head>
-<body>
-  <header class="wrap topbar">
-    <div class="brand">Luz do Alcorão</div>
-    <nav class="nav" aria-label="Navegação principal">
-      <a href="#versiculo">Versículo do dia</a>
-      <a href="estudos.html">Estudos</a>
-      <a href="#conceitos">Conceitos</a>
-      <a href="#projeto">Projeto</a>
-    </nav>
-  </header>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <site-header></site-header>
 
-  <main>
-    <section class="hero wrap">
-      <div class="arabesque" aria-hidden="true">۞</div>
-      <div class="eyebrow">Tradição islâmica · espiritualidade · sentido</div>
-      <h1>Luz do Alcorão</h1>
-      <p class="subtitle">Estudo do Alcorão com contexto, tradição islâmica, reflexão espiritual, aplicação cotidiana e diálogo responsável com a Logoterapia.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="estudos.html">Acessar os estudos</a>
-        <a class="btn secondary" href="#versiculo">Versículo do dia</a>
-      </div>
-      <div class="search" role="search">
-        <input id="search-input" aria-label="Pesquisar tema" placeholder="Pesquise: sabr, tawakkul, gratidão, sentido...">
-        <button id="search-button">Pesquisar</button>
-      </div>
-      <div id="search-result" class="result" aria-live="polite"></div>
-    </section>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+          <h1>Uma biblioteca para ler, compreender e viver o Islã.</h1>
+          <p class="hero-lead">Alcorão, Sunnah autêntica e Tafsir clássico apresentados com reverência, clareza e uma experiência pensada para a língua portuguesa.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="suratas.html">
+              <span>Explorar as 114 Suratas</span>
+              <span aria-hidden="true">←</span>
+            </a>
+            <a class="button button-ghost" href="devocional.html">Devocional de hoje</a>
+          </div>
+          <ul class="trust-list" aria-label="Princípios editoriais">
+            <li>Texto e comentário sempre separados</li>
+            <li>Fontes identificadas</li>
+            <li>Sem sincretismo</li>
+          </ul>
+        </div>
 
-    <section id="versiculo" class="section wrap">
-      <div class="card verse">
-        <div id="verse-ref" class="ref"></div>
-        <blockquote id="verse-text"></blockquote>
-        <p id="verse-theme" class="note"></p>
-        <a class="btn secondary" href="estudos.html">Ler o estudo completo</a>
-      </div>
-    </section>
-
-    <section class="section wrap">
-      <div class="section-title"><div class="eyebrow">Biblioteca inicial</div><h2>Estudos já disponíveis</h2><p>Seis estudos introdutórios conectando o texto corânico, a tradição islâmica e a busca de sentido.</p></div>
-      <div class="grid">
-        <article class="card concept"><div class="term">Alcorão 13:28</div><h3>Dhikr e serenidade</h3><p>A recordação de Allah como recentramento do coração.</p></article>
-        <article class="card concept"><div class="term">Alcorão 2:286</div><h3>Responsabilidade e prova</h3><p>A medida da carga, a esperança e a liberdade interior.</p></article>
-        <article class="card concept"><div class="term">Alcorão 94:5-6</div><h3>Dificuldade e facilidade</h3><p>Sabr, perseverança e sentido no sofrimento.</p></article>
-        <article class="card concept"><div class="term">Alcorão 39:53</div><h3>Misericórdia e recomeço</h3><p>Esperança, arrependimento e transformação da culpa.</p></article>
-        <article class="card concept"><div class="term">Alcorão 65:3</div><h3>Tawakkul</h3><p>Agir com responsabilidade e confiar em Allah.</p></article>
-        <article class="card concept"><div class="term">Alcorão 14:7</div><h3>Shukr</h3><p>Gratidão como reconhecimento, responsabilidade e serviço.</p></article>
-      </div>
-      <div class="hero-actions"><a class="btn primary" href="estudos.html">Abrir biblioteca</a></div>
-    </section>
-
-    <section id="conceitos" class="section wrap">
-      <div class="section-title"><div class="eyebrow">Eixos do projeto</div><h2>Conceitos fundamentais</h2></div>
-      <div class="grid">
-        <article class="card concept"><div class="term">Unicidade</div><h3>Tawhid</h3><p>A unicidade de Allah como princípio integrador da existência.</p></article>
-        <article class="card concept"><div class="term">Natureza primordial</div><h3>Fitrah</h3><p>A disposição originária para reconhecer o bem e buscar a verdade.</p></article>
-        <article class="card concept"><div class="term">Intenção</div><h3>Niyyah</h3><p>A orientação interior que confere valor moral ao ato.</p></article>
-        <article class="card concept"><div class="term">Perseverança</div><h3>Sabr</h3><p>Paciência ativa, firmeza e fidelidade ao bem.</p></article>
-        <article class="card concept"><div class="term">Confiança</div><h3>Tawakkul</h3><p>Entrega a Allah acompanhada de ação e responsabilidade.</p></article>
-        <article class="card concept"><div class="term">Recordação</div><h3>Dhikr</h3><p>O retorno consciente do coração a Allah.</p></article>
+        <article class="daily-card surface" id="daily-overview" aria-live="polite">
+          <div class="daily-card-head">
+            <span class="eyebrow">Versículo do dia</span>
+            <button class="icon-button favorite-button" type="button" data-favorite-daily aria-label="Adicionar aos favoritos">
+              <span aria-hidden="true">☆</span>
+            </button>
+          </div>
+          <p class="arabic-display" id="daily-arabic" dir="rtl" lang="ar"></p>
+          <blockquote id="daily-translation"></blockquote>
+          <p class="source-line" id="daily-reference"></p>
+          <p class="editorial-label">Tradução aproximada do sentido</p>
+          <a class="text-link" href="devocional.html">Ler contexto, Tafsir e aplicação <span aria-hidden="true">←</span></a>
+        </article>
       </div>
     </section>
 
-    <section id="projeto" class="section wrap">
-      <div class="section-title"><div class="eyebrow">Propósito editorial</div><h2>Conhecimento com reverência</h2></div>
-      <div class="card">
-        <p>O <strong>Luz do Alcorão</strong> é um projeto educativo e contemplativo. A Logoterapia aparece como ponte para refletir sobre propósito, sofrimento, responsabilidade, esperança e transcendência, sem reduzir o Alcorão a uma teoria psicológica.</p>
-        <p>Os estudos distinguem claramente texto sagrado, tradição interpretativa, reflexão contemporânea e aplicação clínica.</p>
+    <section class="section section-ivory">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Seu caminho de estudo</p>
+            <h2>Comece pelo que você procura hoje.</h2>
+          </div>
+          <p>Conteúdo organizado para quem já pratica o Islã e para quem deseja conhecê-lo com respeito, sem pressupor conhecimento prévio.</p>
+        </div>
+        <div class="path-grid">
+          <a class="path-card" href="suratas.html">
+            <span class="path-number">01</span>
+            <span class="path-icon" aria-hidden="true">۞</span>
+            <h3>Alcorão</h3>
+            <p>Índice completo das 114 Suratas, metadados e acesso à leitura verso a verso.</p>
+            <span class="text-link">Abrir Mushaf digital ←</span>
+          </a>
+          <a class="path-card" href="devocional.html">
+            <span class="path-number">02</span>
+            <span class="path-icon" aria-hidden="true">☾</span>
+            <h3>Devocional diário</h3>
+            <p>Versículo, contexto, comentário atribuído, prática, du'a e perguntas para reflexão.</p>
+            <span class="text-link">Refletir hoje ←</span>
+          </a>
+          <a class="path-card" href="biblioteca.html">
+            <span class="path-number">03</span>
+            <span class="path-icon" aria-hidden="true">◇</span>
+            <h3>Biblioteca</h3>
+            <p>Profetas, virtudes, adoração, família e fundamentos reunidos por temas.</p>
+            <span class="text-link">Explorar temas ←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Leituras essenciais</p>
+          <h2>Portas de entrada para a tradição islâmica</h2>
+          <p>Trilhas editoriais permanentes, construídas a partir das fontes primárias e dos comentários clássicos.</p>
+        </div>
+        <div class="feature-grid">
+          <a class="feature-card feature-card-large" href="nomes-de-allah.html">
+            <div>
+              <span class="tag">Aqidah · conhecimento de Allah</span>
+              <p class="arabic-ornament" lang="ar" dir="rtl">الأسماء الحسنى</p>
+              <h3>Os Belos Nomes de Allah</h3>
+              <p>Um estudo cuidadoso do hadith dos noventa e nove nomes, dos nomes estabelecidos no Alcorão e na Sunnah e das divergências sobre sua enumeração.</p>
+            </div>
+            <span class="card-action">Iniciar estudo ←</span>
+          </a>
+          <a class="feature-card" href="profeta-muhammad.html">
+            <span class="tag">Sirah</span>
+            <h3>Profeta Muhammad ﷺ</h3>
+            <p>Vida, missão, caráter e legado a partir de fontes reconhecidas.</p>
+            <span class="card-action">Conhecer a Sirah ←</span>
+          </a>
+          <a class="feature-card" href="biblioteca.html?tema=historias-dos-profetas">
+            <span class="tag">Qasas al-Anbiya</span>
+            <h3>Histórias dos Profetas</h3>
+            <p>Narrativas corânicas, seus contextos e ensinamentos centrais.</p>
+            <span class="card-action">Explorar histórias ←</span>
+          </a>
+          <a class="feature-card" href="biblioteca.html?tema=virtudes-islamicas">
+            <span class="tag">Akhlaq</span>
+            <h3>Virtudes Islâmicas</h3>
+            <p>Sabr, shukr, tawakkul, taqwa, ikhlas e misericórdia.</p>
+            <span class="card-action">Estudar virtudes ←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section source-section">
+      <div class="container source-layout">
+        <div>
+          <p class="eyebrow">Compromisso editorial</p>
+          <h2>Reverência também exige método.</h2>
+        </div>
+        <div class="source-copy">
+          <p>O texto do Alcorão nunca é confundido com explicação humana. Toda síntese interpretativa é identificada como comentário e atribuída às fontes consultadas.</p>
+          <div class="source-pills" aria-label="Principais fontes">
+            <span>Alcorão</span>
+            <span>Sahih al-Bukhari</span>
+            <span>Sahih Muslim</span>
+            <span>Ibn Kathir</span>
+            <span>Al-Tabari</span>
+            <span>Al-Qurtubi</span>
+            <span>As-Sa'di</span>
+          </div>
+          <a class="text-link" href="metodologia.html">Conheça nossa metodologia editorial ←</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer wrap"><p>Luz do Alcorão · estudo, contemplação e busca de sentido</p><p>Projeto educativo independente, elaborado com respeito à tradição islâmica.</p></footer>
-  <script src="app.js"></script>
+  <site-footer></site-footer>
+  <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>

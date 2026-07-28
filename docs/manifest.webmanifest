@@ -1,10 +1,46 @@
 {
+  "id": "/",
   "name": "Luz do Alcorão",
   "short_name": "Luz do Alcorão",
-  "description": "Estudo do Alcorão, espiritualidade islâmica e busca de sentido.",
-  "start_url": "./",
+  "description": "Biblioteca islâmica em português para leitura, estudo e devoção.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#071d1a",
-  "theme_color": "#071d1a",
-  "lang": "pt-BR"
+  "orientation": "any",
+  "background_color": "#031f1c",
+  "theme_color": "#073c35",
+  "categories": ["education", "books", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Devocional de hoje",
+      "short_name": "Devocional",
+      "url": "./devocional.html"
+    },
+    {
+      "name": "As 114 Suratas",
+      "short_name": "Suratas",
+      "url": "./suratas.html"
+    },
+    {
+      "name": "Biblioteca",
+      "short_name": "Biblioteca",
+      "url": "./biblioteca.html"
+    }
+  ]
 }

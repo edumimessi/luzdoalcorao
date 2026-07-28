@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Biblioteca islâmica: Profetas, companheiros, virtudes, adoração, família, ética e vida espiritual.">
+  <meta name="theme-color" content="#073c35">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Biblioteca islâmica — Luz do Alcorão">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luzdoalcorao.com.br/biblioteca.html">
+  <link rel="canonical" href="https://luzdoalcorao.com.br/biblioteca.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Biblioteca islâmica — Luz do Alcorão</title>
+</head>
+<body data-page="library">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <site-header></site-header>
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="kicker">مكتبة إسلامية</p>
+        <h1>Biblioteca Islâmica</h1>
+        <p>Estudos organizados por grandes áreas, com distinção clara entre o texto revelado, os hadiths, a interpretação dos sábios e a síntese editorial.</p>
+      </div>
+    </section>
+    <section class="section section-ivory">
+      <div class="container">
+        <div class="library-toolbar">
+          <label class="search-field">
+            <span class="sr-only">Pesquisar na biblioteca</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="library-search" type="search" placeholder="Pesquisar: Ramadã, família, sabr, zakat…" autocomplete="off">
+          </label>
+          <div class="filter-group" id="library-filters" role="group" aria-label="Filtrar biblioteca"></div>
+        </div>
+        <p class="results-count" id="library-count"></p>
+        <div class="library-grid" id="library-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

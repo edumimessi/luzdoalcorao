@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Devocional islâmico diário: versículo, contexto, Tafsir, aplicação prática, du'a, hadith e reflexão.">
+  <meta name="theme-color" content="#073c35">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Devocional do dia — Luz do Alcorão">
+  <meta property="og:description" content="Uma pausa diária com o Alcorão, a Sunnah e o comentário tradicional.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://luzdoalcorao.com.br/devocional.html">
+  <link rel="canonical" href="https://luzdoalcorao.com.br/devocional.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Devocional do dia — Luz do Alcorão</title>
+</head>
+<body data-page="devotional">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <site-header></site-header>
+  <main id="conteudo">
+    <section class="devotional-hero">
+      <div class="container narrow devotional-title">
+        <p class="kicker">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+        <p class="eyebrow">Devocional do dia · <span id="devotional-date"></span></p>
+        <h1 id="devotional-title"></h1>
+        <p id="devotional-lead"></p>
+        <div class="button-row">
+          <button class="button button-primary" type="button" data-share>Compartilhar</button>
+          <button class="button button-ghost" type="button" id="devotional-favorite">☆ Favoritar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ivory">
+      <div class="container devotional-layout">
+        <nav class="devotional-nav" aria-label="Seções do devocional">
+          <a href="#versiculo">Versículo</a>
+          <a href="#contexto">Contexto</a>
+          <a href="#comentario">Comentário</a>
+          <a href="#pratica">Prática</a>
+          <a href="#dua">Du'a</a>
+          <a href="#hadith">Hadith</a>
+          <a href="#reflexao">Reflexão</a>
+        </nav>
+        <article class="devotional-article" id="devotional-content"></article>
+      </div>
+      <div class="container devotional-pagination">
+        <button class="button button-outline" id="devotional-previous" type="button">→ Reflexão anterior</button>
+        <button class="button button-outline" id="devotional-next" type="button">Próxima reflexão ←</button>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Índice das 114 Suratas do Alcorão: nomes em árabe, transliteração, classificação e número de versículos.">
+  <meta name="theme-color" content="#073c35">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="114 Suratas — Luz do Alcorão">
+  <meta property="og:description" content="Explore todos os capítulos do Alcorão em uma biblioteca organizada e acessível.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luzdoalcorao.com.br/suratas.html">
+  <link rel="canonical" href="https://luzdoalcorao.com.br/suratas.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>114 Suratas — Luz do Alcorão</title>
+</head>
+<body data-page="surahs">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <site-header></site-header>
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="kicker">القرآن الكريم</p>
+        <h1>As 114 Suratas</h1>
+        <p>Explore o Alcorão por nome, número ou local predominante de revelação. Algumas classificações entre Meca e Medina possuem divergências tradicionais, indicadas nos estudos detalhados.</p>
+      </div>
+    </section>
+
+    <section class="section section-ivory">
+      <div class="container">
+        <div class="library-toolbar">
+          <label class="search-field">
+            <span class="sr-only">Pesquisar Surata</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="surah-search" type="search" placeholder="Pesquisar por nome, número ou árabe…" autocomplete="off">
+          </label>
+          <div class="filter-group" role="group" aria-label="Filtrar Suratas">
+            <button class="filter-chip active" type="button" data-surah-filter="all">Todas</button>
+            <button class="filter-chip" type="button" data-surah-filter="meccan">Meca</button>
+            <button class="filter-chip" type="button" data-surah-filter="medinan">Medina</button>
+            <button class="filter-chip" type="button" data-surah-filter="favorites">Favoritas</button>
+          </div>
+        </div>
+        <p class="results-count" id="surah-count"></p>
+        <div class="surah-grid" id="surah-grid" aria-live="polite"></div>
+        <div class="empty-state" id="surah-empty" hidden>
+          <span aria-hidden="true">۞</span>
+          <h2>Nenhuma Surata encontrada</h2>
+          <p>Tente outro nome, número ou filtro.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

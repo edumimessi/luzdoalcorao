@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Estudo de uma Surata do Alcorão com contexto, temas, leitura e fontes.">
+  <meta name="theme-color" content="#073c35">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Surata — Luz do Alcorão</title>
+</head>
+<body data-page="surah">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <site-header></site-header>
+  <main id="conteudo">
+    <section class="surah-hero" id="surah-hero">
+      <div class="container narrow">
+        <a class="back-link" href="suratas.html">→ Voltar às 114 Suratas</a>
+        <div class="surah-title-row">
+          <div>
+            <p class="eyebrow" id="surah-number"></p>
+            <h1 id="surah-title"></h1>
+            <p class="surah-translation" id="surah-meaning"></p>
+          </div>
+          <p class="surah-arabic-title" id="surah-arabic" dir="rtl" lang="ar"></p>
+        </div>
+        <div class="surah-meta" id="surah-meta"></div>
+        <div class="button-row left">
+          <a class="button button-primary" id="surah-read-link" href="#" target="_blank" rel="noopener">Ler verso a verso</a>
+          <button class="button button-ghost" id="surah-favorite" type="button">☆ Favoritar</button>
+          <button class="button button-ghost" type="button" data-share>Compartilhar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ivory">
+      <div class="container reading-layout">
+        <article class="reading-main">
+          <div class="content-block">
+            <p class="eyebrow">Visão geral</p>
+            <h2>Sobre esta Surata</h2>
+            <p id="surah-summary"></p>
+          </div>
+          <div class="content-block">
+            <p class="eyebrow">Temas centrais</p>
+            <div class="topic-chips" id="surah-themes"></div>
+          </div>
+          <div class="content-block interpretation-block">
+            <div class="label-row">
+              <span class="content-label">Comentário · síntese interpretativa</span>
+              <span class="source-badge">Tafsir clássico</span>
+            </div>
+            <h2>Orientação para o estudo</h2>
+            <p id="surah-commentary"></p>
+            <p class="editorial-note">Este parágrafo é comentário editorial, não é parte do texto do Alcorão. Estudos verso a verso serão publicados progressivamente após revisão das fontes citadas.</p>
+          </div>
+          <div class="content-block">
+            <p class="eyebrow">Leitura integral</p>
+            <h2>Texto árabe, tradução e recitação</h2>
+            <p>Enquanto a edição integral em português é preparada com as permissões e a revisão necessárias, a leitura completa é oferecida por meio do Quran.com, com texto árabe, traduções, áudio e opções de Tafsir.</p>
+            <a class="button button-primary" id="surah-external-link" target="_blank" rel="noopener">Abrir leitura completa</a>
+          </div>
+        </article>
+        <aside class="reading-aside">
+          <div class="aside-card">
+            <p class="eyebrow">Fontes-base</p>
+            <ul class="source-list">
+              <li>Alcorão, texto da Surata</li>
+              <li>Tafsir Ibn Kathir</li>
+              <li>Tafsir Al-Tabari</li>
+              <li>Tafsir Al-Qurtubi</li>
+              <li>Tafsir As-Sa'di</li>
+            </ul>
+          </div>
+          <div class="aside-card">
+            <p class="eyebrow">Nota editorial</p>
+            <p>Classificações, causas específicas de revelação e atribuições de Tafsir só são afirmadas quando sustentadas por fontes identificáveis.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

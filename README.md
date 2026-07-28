@@ -1,38 +1,51 @@
 # Luz do Alcorão
 
-Site de estudo do Alcorão em língua portuguesa, com abordagem histórica, espiritual e existencial.
+Biblioteca islâmica em língua portuguesa, desenvolvida para leitura, estudo e devoção com distinção explícita entre:
 
-O projeto nasce do diálogo entre a tradição islâmica e a Logoterapia, utilizando como eixos:
+1. texto do Alcorão;
+2. hadith identificado;
+3. síntese de Tafsir atribuída;
+4. aplicação editorial.
 
-- Tawhid — unicidade divina e integração da existência;
-- Fitrah — natureza primordial e abertura ao sentido;
-- Niyyah — intenção consciente e responsabilidade;
-- Sabr — paciência perseverante diante das provas;
-- Tawakkul — confiança em Allah aliada ao esforço responsável;
-- Dhikr — recordação de Allah como recentramento espiritual;
-- Shukr — gratidão como reconhecimento do sentido;
-- Rahmah — misericórdia como fundamento das relações.
+## Estado atual
 
-## Estrutura inicial
+A primeira fundação profissional inclui:
 
-O site está em `docs/` para publicação pelo GitHub Pages.
+- identidade visual responsiva em verde profundo, dourado, marfim e azul-petróleo;
+- índice pesquisável das 114 Suratas;
+- páginas de Surata orientadas a dados;
+- biblioteca temática com filtros e busca;
+- devocional diário estruturado;
+- página dos Belos Nomes de Allah com nota sobre a enumeração;
+- introdução à Sirah do Profeta Muhammad ﷺ;
+- favoritos locais, compartilhamento e tema claro/escuro;
+- PWA com funcionamento offline;
+- SEO técnico, Open Graph, sitemap, robots e domínio personalizado;
+- integração opcional com Google Analytics, desativada por padrão.
 
-- `docs/index.html` — página inicial;
-- `docs/styles.css` — identidade visual;
-- `docs/app.js` — conteúdo dinâmico e versículo do dia;
-- `docs/manifest.webmanifest` — instalação como aplicativo.
+## Desenvolvimento local
 
-## Proposta editorial
+O site é estático e não exige etapa de compilação:
 
-Cada estudo futuro deverá distinguir claramente:
+```bash
+python3 -m http.server 8000 --directory docs
+```
 
-1. texto corânico e tradução utilizada;
-2. contexto histórico e literário;
-3. palavras-chave em árabe;
-4. síntese de comentários tradicionais;
-5. reflexão espiritual islâmica;
-6. diálogo com a Logoterapia;
-7. aplicação prática;
-8. perguntas de interiorização.
+Acesse `http://localhost:8000`.
 
-Este projeto não substitui o estudo com professores, imames ou instituições islâmicas qualificadas. É uma plataforma educativa e contemplativa, elaborada com respeito à tradição.
+## Organização
+
+- `docs/`: raiz publicada pelo GitHub Pages;
+- `docs/assets/js/data.js`: metadados das Suratas, temas, Nomes e devocionais;
+- `docs/assets/js/app.js`: componentes e comportamento;
+- `docs/assets/css/styles.css`: sistema visual;
+- `docs/metodologia.html`: critérios editoriais;
+- `docs/fontes.html`: fontes e créditos.
+
+## Publicação
+
+Configure o GitHub Pages para publicar a pasta `/docs` da branch `main`. O domínio esperado é `luzdoalcorao.com.br`.
+
+## Rigor editorial
+
+Nenhuma aplicação contemporânea deve ser apresentada como doutrina. Divergências reconhecidas devem ser explicitadas. Hadiths precisam de coleção, numeração e classificação quando a autenticidade não for autoevidente pela coleção.

@@ -33,6 +33,12 @@ python3 -m http.server 8000 --directory docs
 
 Acesse `http://localhost:8000`.
 
+Valide a integridade editorial e técnica antes de publicar:
+
+```bash
+node scripts/validate.mjs
+```
+
 ## Organização
 
 - `docs/`: raiz publicada pelo GitHub Pages;
@@ -41,6 +47,7 @@ Acesse `http://localhost:8000`.
 - `docs/assets/css/styles.css`: sistema visual;
 - `docs/metodologia.html`: critérios editoriais;
 - `docs/fontes.html`: fontes e créditos.
+- `scripts/validate.mjs`: auditoria automática de dados, links e política editorial.
 
 ## Publicação
 

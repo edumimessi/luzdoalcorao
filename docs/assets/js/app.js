@@ -65,7 +65,11 @@ const pageLinks = {
   topic: "biblioteca.html",
   names: "nomes-de-allah.html",
   prophet: "profeta-muhammad.html",
-  currents: "correntes.html",
+  studies: "estudos.html",
+  pillars: "estudos.html",
+  theology: "estudos.html",
+  sharia: "estudos.html",
+  currents: "estudos.html",
   method: "metodologia.html"
 };
 
@@ -86,7 +90,7 @@ class SiteHeader extends HTMLElement {
             <a href="devocional.html"${currentAttr("devocional.html")}>Devocional</a>
             <a href="biblioteca.html"${currentAttr("biblioteca.html")}>Biblioteca</a>
             <a href="nomes-de-allah.html"${currentAttr("nomes-de-allah.html")}>Nomes de Allah</a>
-            <a href="correntes.html"${currentAttr("correntes.html")}>Correntes</a>
+            <a href="estudos.html"${currentAttr("estudos.html")}>Estudos</a>
           </nav>
           <div class="header-actions">
             <a class="icon-button" href="biblioteca.html#pesquisa" aria-label="Pesquisar no site" title="Pesquisar">⌕</a>
@@ -104,7 +108,11 @@ class SiteHeader extends HTMLElement {
           <a href="biblioteca.html">Biblioteca</a>
           <a href="nomes-de-allah.html">Nomes de Allah</a>
           <a href="profeta-muhammad.html">Profeta Muhammad ﷺ</a>
-          <a href="correntes.html">Correntes e pensadores</a>
+          <a href="estudos.html">Estudos</a>
+          <a href="pilares.html">— Pilares e artigos de fé</a>
+          <a href="teologia.html">— Teologia</a>
+          <a href="sharia.html">— Sharia e ética</a>
+          <a href="correntes.html">— Correntes e pensadores</a>
           <a href="metodologia.html">Metodologia</a>
         </nav>
       </div>`;
@@ -134,7 +142,7 @@ class SiteFooter extends HTMLElement {
               <h2>Biblioteca</h2>
               <a href="nomes-de-allah.html">Nomes de Allah</a>
               <a href="profeta-muhammad.html">Profeta Muhammad ﷺ</a>
-              <a href="correntes.html">Correntes e pensadores</a>
+              <a href="estudos.html">Estudos temáticos</a>
               <a href="biblioteca.html?busca=profetas">Histórias dos Profetas</a>
               <a href="biblioteca.html?busca=virtudes">Virtudes</a>
             </div>

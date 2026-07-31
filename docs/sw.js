@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luzdoalcorao-v3";
+const CACHE_VERSION = "luzdoalcorao-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -9,6 +9,10 @@ const APP_SHELL = [
   "./devocional.html",
   "./nomes-de-allah.html",
   "./profeta-muhammad.html",
+  "./estudos.html",
+  "./pilares.html",
+  "./teologia.html",
+  "./sharia.html",
   "./correntes.html",
   "./metodologia.html",
   "./fontes.html",

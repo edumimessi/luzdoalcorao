@@ -18,6 +18,7 @@
     --emerald-700: #126355;
     --petrol-900: #082c35;
     --petrol-700: #155360;
+    --gold-700: #7b5b1d;
     --gold-500: #caa85e;
     --gold-400: #dfc47f;
     --gold-200: #efe0b9;
@@ -245,7 +246,7 @@
   .path-card + .path-card { border-left: 1px solid var(--line-light); }
   .path-card::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: .22rem; background: var(--gold-500); transform: scaleX(0); transition: transform var(--transition); }
   .path-card:hover::after { transform: scaleX(1); }
-  .path-number { color: #9aa19e; font-size: .64rem; font-weight: 800; letter-spacing: .1em; }
+  .path-number { color: var(--ink-600); font-size: .64rem; font-weight: 800; letter-spacing: .1em; }
   .path-icon { margin: 2rem 0 1.25rem; color: var(--gold-500); font: 500 2rem/1 var(--serif); }
   .path-card p { margin-top: .9rem; color: var(--ink-600); font-size: .9rem; }
   .path-card .text-link { margin-top: auto; padding-top: 2rem; }
@@ -331,7 +332,7 @@
   .library-card h2 { margin-top: 1rem; font-size: 1.55rem; }
   .library-card p { margin-top: .65rem; color: var(--ink-600); font-size: .84rem; }
   .library-card .card-action { margin-top: auto; padding-top: 1.4rem; }
-  .library-card-index { align-self: flex-end; color: var(--gold-500); font: 500 1.3rem/1 var(--serif); }
+  .library-card-index { align-self: flex-end; color: var(--gold-700); font: 500 1.3rem/1 var(--serif); }
 
   .topic-hero .button-row { justify-content: flex-start; }
   .hierarchy-list { display: grid; gap: .8rem; margin-top: 1rem; padding: 0; list-style: none; counter-reset: hierarchy; }
@@ -375,7 +376,7 @@
   .names-toolbar .results-count { margin: 0; }
   .names-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
   .name-card { min-height: 12rem; padding: 1.3rem; border: 1px solid var(--line-light); background: var(--white); border-radius: var(--radius-sm); text-align: center; }
-  .name-card-index { color: #9ba5a1; font-size: .66rem; font-weight: 800; }
+  .name-card-index { color: var(--ink-600); font-size: .66rem; font-weight: 800; }
   .name-card-arabic { margin: 1rem 0 .6rem; color: var(--emerald-800); font: 500 2rem/1.5 var(--arabic); }
   .name-card h2 { font-size: 1.15rem; }
   .name-card p { margin-top: .35rem; color: var(--ink-600); font-size: .75rem; }
@@ -391,7 +392,7 @@
 
   .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
   .method-card { min-height: 20rem; padding: 1.7rem; border: 1px solid var(--line-light); background: var(--white); border-radius: var(--radius-md); }
-  .method-card > span { color: var(--gold-500); font-size: .72rem; font-weight: 800; }
+  .method-card > span { color: var(--gold-700); font-size: .72rem; font-weight: 800; }
   .method-card h2 { margin: 2rem 0 1rem; font-size: 1.7rem; }
   .method-card p { color: var(--ink-600); font-size: .86rem; }
   .source-policy ol { display: grid; gap: .7rem; padding-left: 1.2rem; }
@@ -472,6 +473,13 @@
 }
 [data-theme="light"] .brand-copy strong { color: var(--emerald-900); }
 [data-theme="light"] .brand-copy small, [data-theme="light"] .desktop-nav a { color: var(--ink-600); }
+/* O rodapé permanece escuro nos dois temas: a marca dentro dele conserva as cores claras. */
+[data-theme="light"] .site-footer .brand-copy strong { color: var(--ivory-50); }
+[data-theme="light"] .site-footer .brand-copy small { color: rgba(248, 243, 232, .57); }
+/* Seções sem fundo próprio herdam o fundo escuro do tema: seus textos precisam clarear.
+   .section-ivory e .source-section trazem fundo claro fixo e ficam de fora. */
+[data-theme="dark"] .section:not(.section-ivory, .source-section) .eyebrow { color: var(--gold-400); }
+[data-theme="dark"] .section:not(.section-ivory, .source-section) .section-heading > p:last-child { color: var(--ivory-100); }
 [data-theme="light"] .icon-button { color: var(--emerald-900); border-color: var(--line-light); background: rgba(7,60,53,.03); }
 [data-theme="light"] .mobile-nav { color: var(--ink-950); background: var(--ivory-50); }
 [data-theme="light"] .button-ghost { color: var(--emerald-900); border-color: rgba(7,60,53,.25); background: rgba(7,60,53,.03); }

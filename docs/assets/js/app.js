@@ -70,7 +70,8 @@ const pageLinks = {
   theology: "estudos.html",
   sharia: "estudos.html",
   currents: "estudos.html",
-  method: "metodologia.html"
+  method: "metodologia.html",
+  author: "autor.html"
 };
 
 class SiteHeader extends HTMLElement {
@@ -114,6 +115,7 @@ class SiteHeader extends HTMLElement {
           <a href="sharia.html">— Sharia e ética</a>
           <a href="correntes.html">— Correntes e pensadores</a>
           <a href="metodologia.html">Metodologia</a>
+          <a href="autor.html">Sobre o autor</a>
         </nav>
       </div>`;
   }
@@ -150,11 +152,12 @@ class SiteFooter extends HTMLElement {
               <h2>Projeto</h2>
               <a href="metodologia.html">Metodologia</a>
               <a href="fontes.html">Fontes e créditos</a>
+              <a href="autor.html">Sobre o autor</a>
               <a href="privacidade.html">Privacidade</a>
             </div>
           </div>
           <div class="footer-bottom">
-            <span>© ${new Date().getFullYear()} Luz do Alcorão</span>
+            <span>© ${new Date().getFullYear()} Luz do Alcorão · concebido, escrito e programado por <a href="autor.html">Dr. Eduardo D'Angelo Mimessi</a></span>
             <span>Texto sagrado, hadith, Tafsir e comentário editorial são apresentados em níveis distintos.</span>
           </div>
         </div>

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luzdoalcorao-v4";
+const CACHE_VERSION = "luzdoalcorao-v5";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -16,6 +16,7 @@ const APP_SHELL = [
   "./correntes.html",
   "./metodologia.html",
   "./fontes.html",
+  "./autor.html",
   "./privacidade.html",
   "./404.html",
   "./offline.html",

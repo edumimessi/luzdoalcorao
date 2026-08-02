@@ -13,5 +13,6 @@
   <url><loc>https://luzdoalcorao.com.br/correntes.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://luzdoalcorao.com.br/metodologia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://luzdoalcorao.com.br/fontes.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://luzdoalcorao.com.br/autor.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://luzdoalcorao.com.br/privacidade.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
